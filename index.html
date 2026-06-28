@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio Afdal</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #f4f7ff;
+        }
+
+        .header {
+            background: linear-gradient(90deg, #1e4fff, #4f7bff);
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .profile {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: white;
+            margin: auto;
+        }
+
+        .section {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            margin: 15px auto;
+            padding: 20px;
+            width: 70%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ddd;
+        }
+
+        button {
+            background: #1e4fff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0f2fb8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="profile"></div>
+        <h1>Afdal 👋</h1>
+        <p>Junior Web Developer</p>
+    </div>
+
+    <div class="section">
+
+        <div class="card">
+            <h2>About Me</h2>
+            <p>Saya sedang belajar Web Development dan Python. Fokus saya adalah membina aplikasi sebenar.</p>
+        </div>
+
+        <div class="card">
+            <h2>Projects</h2>
+            <p>✔ To-Do List App (JavaScript)</p>
+            <p>✔ Calculator (Python)</p>
+        </div>
+
+        <div class="card">
+            <h2>Contact</h2>
+            <button onclick="contact()">WhatsApp Saya</button>
+        </div>
+
+    </div>
+
+    <script>
+        function contact() {
+            alert("Nanti kita boleh letak link WhatsApp sebenar 👍");
+        }
+    </script>
+
+</body>
+</html>
