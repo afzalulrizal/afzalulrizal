@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Portfolio Afdal</title>
+    <title>Afzalul Rizal | Web Developer</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
         body {
-            font-family: Arial;
             margin: 0;
+            font-family: Arial;
             background: #f4f7ff;
+            color: #333;
         }
 
+        /* HEADER */
         .header {
-            background: linear-gradient(90deg, #1e4fff, #4f7bff);
+            background: linear-gradient(135deg, #1e4fff, #4f7bff);
             color: white;
             text-align: center;
-            padding: 50px;
+            padding: 70px 20px;
         }
 
         .profile {
@@ -23,70 +27,157 @@
             border-radius: 50%;
             background: white;
             margin: auto;
+            margin-bottom: 15px;
+            overflow: hidden;
         }
 
+        .profile img {
+            width: 100%;
+        }
+
+        .header h1 {
+            margin: 10px 0 5px;
+        }
+
+        .header p {
+            margin: 0;
+            opacity: 0.9;
+        }
+
+        /* SECTIONS */
         .section {
-            padding: 30px;
-            text-align: center;
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
         }
 
         .card {
             background: white;
-            margin: 15px auto;
-            padding: 20px;
-            width: 70%;
-            border-radius: 10px;
-            box-shadow: 0 0 10px #ddd;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.08);
         }
 
-        button {
+        h2 {
+            color: #1e4fff;
+        }
+
+        /* SKILLS */
+        .skills span {
+            display: inline-block;
             background: #1e4fff;
             color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 8px;
-            cursor: pointer;
+            padding: 8px 12px;
+            margin: 5px;
+            border-radius: 20px;
+            font-size: 14px;
         }
 
-        button:hover {
+        /* BUTTON */
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #1e4fff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
             background: #0f2fb8;
+        }
+
+        /* PROJECT CARD */
+        .project {
+            border-left: 5px solid #1e4fff;
+            padding-left: 15px;
+            margin-bottom: 15px;
+        }
+
+        /* FOOTER */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: white;
+            margin-top: 40px;
         }
     </style>
 </head>
 
 <body>
 
+    <!-- HEADER -->
     <div class="header">
-        <div class="profile"></div>
-        <h1>Afdal 👋</h1>
-        <p>Junior Web Developer</p>
+
+        <div class="profile">
+            <img src="https://via.placeholder.com/120" alt="profile">
+        </div>
+
+        <h1>Afzalul Rizal 👋</h1>
+        <p>Junior Web Developer | Python Learner</p>
     </div>
 
+    <!-- ABOUT -->
     <div class="section">
 
         <div class="card">
             <h2>About Me</h2>
-            <p>Saya sedang belajar Web Development dan Python. Fokus saya adalah membina aplikasi sebenar.</p>
+            <p>
+                Saya seorang beginner web developer yang sedang fokus membina website dan aplikasi real world.
+            </p>
         </div>
 
+        <!-- SKILLS -->
+        <div class="card">
+            <h2>Skills</h2>
+            <div class="skills">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Python</span>
+            </div>
+        </div>
+
+        <!-- PROJECTS -->
         <div class="card">
             <h2>Projects</h2>
-            <p>✔ To-Do List App (JavaScript)</p>
-            <p>✔ Calculator (Python)</p>
+
+            <div class="project">
+                <b>To-Do List App</b>
+                <p>Web app untuk tambah & delete task</p>
+            </div>
+
+            <div class="project">
+                <b>Calculator</b>
+                <p>Python CLI calculator project</p>
+            </div>
+
+            <div class="project">
+                <b>Portfolio Website</b>
+                <p>Website personal developer</p>
+            </div>
+
         </div>
 
+        <!-- CONTACT -->
         <div class="card">
             <h2>Contact</h2>
-            <button onclick="contact()">WhatsApp Saya</button>
+            <p>Untuk freelance / project website</p>
+
+            <a class="btn" href="https://wa.me/60123456789" target="_blank">
+                WhatsApp Saya
+            </a>
         </div>
 
     </div>
 
-    <script>
-        function contact() {
-            alert("Nanti kita boleh letak link WhatsApp sebenar 👍");
-        }
-    </script>
+    <!-- FOOTER -->
+    <div class="footer">
+        © 2026 Afzalul Rizal | Built with HTML CSS JS
+    </div>
 
 </body>
 </html>
